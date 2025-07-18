@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *, *::before, *::after{
+            padding:0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        ul{
+            padding: 10px;
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+            align-items: center;
+            justify-content: left;
+        }
+        button{
+            background-color:yellow; 
+            padding: 10px 20px; 
+            border-radius: 10px;
+            border: none; 
+            outline: none; 
+            color:black;
+        }
+    </style>
+</head>
+<body style="font-family: Arial, Helvetica, sans-serif; padding: 30px; display:flex;  height: 100vh; align-items: center; justify-content: center; gap: 5px">
+    <section style="background-color: #232121; width: 33% ;padding:20px; height: 100%; color: white" class="products" id="product">
+        <!-- Products -->
+         <h2>Products</h2>
+         <ul id="productList"></ul>
+    </section>
+    <section style="background-color: #252323; width: 33.3%; padding:20px; height: 100%; color: white" class="cart" id="cart">
+        <h2>Cart</h2>
+         <ul id="cartList"></ul>
+        <!-- cart items -->
+    </section>
+    <section style="background-color: #272525; width: 33.3%; padding:20px; height: 100%; color: white;" class="form-section" id="formSection">
+        <h2>Form</h2>
+        <!-- form to add products -->
+         <form action="" id="form">
+            <div class="form-group" style="display: flex; gap: 4px; padding: 10px;">
+                <label for="id">id: </label>
+                <input type="number" id="id">
+            </div><br>
+            <div class="form-group" style="display: flex; gap: 4px; padding: 10px;">
+                <label for="name">Product: </label>
+                <input type="text" id="name">
+            </div><br>
+            <div class="form-group" style="display: flex; gap: 4px; padding: 10px;">
+                <label for="price">Price</label>
+                <input type="number" step="0.01" id="price">
+            </div><br>
+            <div class="form-group" style="display: flex; gap: 4px; padding: 10px;">
+                <label for="location">Location</label>
+                <input type="text" id="location">
+            </div><br>
+            <div class="form-group" style="display: flex; gap: 4px; padding: 10px;">
+                <label for="category">Category</label>
+                <input type="text" id="category">
+            </div><br>
+            <button onCl>Add Product</button>
+         </form>
+    </section>
+    <script src="./test1.js">
+        
+    </script>
+</body>
+</html>
