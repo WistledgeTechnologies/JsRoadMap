@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="../../../boxicons-2.1.4/boxicons-2.1.4/css/boxicons.min.css">
+    <title>Product Management APP</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li data-section="home">Home</li>
+            <li data-section="products">Products</li>
+            <li data-section="cart">Cart</li>
+            <li data-section="wishlist">Wishlist</li>
+            <li data-section="stats">Stats</li>
+            <li data-section="category">Category</li>
+            <li data-section="bookings">Bookings</li>
+            <li data-section="settings">Settings</li>
+
+            <label class="toggle-menu">
+                <input type="checkbox" id="toggle">
+                <span class="slider"></span>
+            </label>
+        </ul>
+    </nav>
+
+    <section id="home" class="active">
+        <header>
+            <div>
+                <button>View available products</button>
+                <button>Add products to list</button>
+                <button>Add products to list</button>
+                <button>Add products to list</button>
+                <button>View available products</button>
+            </div>
+        </header>
+        <h1>This is the home section</h1>
+        <div class="product-list" id="featuredList"></div>
+
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <p>Product successfully added to cart</p>
+                <button id="closeModal">close</button>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="products">
+        <header>
+            <div>
+                <button>View available products</button>
+                <button>Add products to list</button>
+                <button>Add products to list</button>
+                <button>Add products to list</button>
+                <button>View available products</button>
+            </div>
+        </header>
+        <h1>This is the home products</h1>
+
+        <div class="product-list" id="productList"></div>
+    </section>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <p>Product successfully added to cart</p>
+            <button id="closeModal">close</button>
+        </div>
+    </div>
+
+    <section id="cart">
+        <header>
+            <div>
+                <button>View available products</button>
+                <button>Add products to list</button>
+                <button>Add products to list</button>
+                <button>Add products to list</button>
+                <button>View available products</button>
+            </div>
+        </header>
+        <h1>This is the home cart</h1>
+        <div class="product-list" id="cartList"></div>
+       
+    </section>
+
+    <section id="wishlist">
+        <header>
+            <div>
+                <button>View available products</button>
+                <button>Add products to list</button>
+                <button>Add products to list</button>
+                <button>Add products to list</button>
+                <button>View available products</button>
+            </div>
+        </header>
+        <h1>This is the home wishlist</h1>
+      
+    </section>
+
+    <section id="stats">
+        <header>
+            <div>
+                <button>View available products</button>
+                <button>Add products to list</button>
+                <button>Add products to list</button>
+                <button>Add products to list</button>
+                <button>View available products</button>
+            </div>
+        </header>
+        <h1>This is the home stats</h1>
+    </section>
+
+    <section id="category">
+        <header>
+            <div>
+                <button>View available products</button>
+                <button>Add products to list</button>
+                <button>Add products to list</button>
+                <button>Add products to list</button>
+                <button>View available products</button>
+            </div>
+        </header>
+        <h1>This is the home category</h1>
+    </section>
+
+    <section id="bookings">
+        <header>
+            <div>
+                <button>View available products</button>
+                <button>Add products to list</button>
+                <button>Add products to list</button>
+                <button>Add products to list</button>
+                <button>View available products</button>
+            </div>
+        </header>
+        <h1>This is the home bookings</h1>
+    </section>
+
+    <section id="settings">
+        <header>
+            <div>
+                <button>View available products</button>
+                <button>Add products to list</button>
+                <button>Add products to list</button>
+                <button>Add products to list</button>
+                <button>View available products</button>
+            </div>
+        </header>
+        <h1>This is the home settings</h1>
+    </section>
+
+    <script src="./test3.js"></script>
+</body>
+</html>

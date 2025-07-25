@@ -51,7 +51,7 @@ function addToCart(id){
 }
 
 function removeProduct(id){
-        const product = products.findIndex((product) => product.id === id);
+        const product = products.findIndex((product) => product.id !== id);
         if(product !== -1){
             cart.splice(product, 1);
             displayCart()
