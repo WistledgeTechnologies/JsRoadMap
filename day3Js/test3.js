@@ -152,3 +152,17 @@ renderProducts(products)
 document.addEventListener('DOMContentLoaded', renderCart);
 
 
+const productSection = document.getElementById("product-section");
+const producSectionBtn = document.querySelectorAll("button");
+
+producSectionBtn.forEach((btn) => {
+    btn.addEventListener('click', () => {
+        productSection.forEach((section) => {
+            section.classList.remove('active')
+        })
+
+        const proSecId = btn.dataset.section;
+        const sec = document.getElementById(proSecId);
+        sec.classList.add('active')
+    })
+})

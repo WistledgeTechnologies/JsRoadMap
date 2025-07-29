@@ -11,8 +11,9 @@
         <ul>
             <h3>Categories</h3>
             <li data-section="fashion">Fashion</li>
+            <li data-section="accessories">Accessories</li>
             <li data-section="electronics">Electronics</li>
-            <li data-section="accessories">Assessories</li>
+            <li data-section="cart">Cart</li>
             <li data-section="ebook">eBooks</li>
             <li data-section="arts">Arts</li>
             <li data-section="courses">Courses</li>
@@ -24,9 +25,18 @@
 
     <section id="fashion" class="active">
         <header>
+            <h1>Fashion</h1>
+
+            <label class="toggle-switch">
+                <input type="checkbox" id="toggle" on>
+                <span class="slider"></span>
+            </label>
 
         </header>
-       <h1>Fashion</h1>
+
+        <div id="featuredList" class="product-list">
+            <h1>Hi</h1>
+        </div>
     </section>
 
     <section id="electronics">
@@ -39,51 +49,58 @@
 
     <section id="accessories">
         <header>
-
+            <h1>Accessories</h1>
+            <label class="toggle-switch">
+                <input type="checkbox" id="toggle" on>
+                <span class="slider"></span>
+            </label>
         </header>
-        <h1>Accessories</h1>
+        <div id="accessory-list" class="product-list">
+            <h1>Hi Dave</h1>
+        </div>
+    </section>
+
+    <section id="cart">
+        <header>
+            <h1>Cart</h1>
+        </header>
+        <div id="cartList" class="product-list"></div>
     </section>
 
     <section id="ebook">
         <header>
-
+            <h1>eBooks</h1>
         </header>
-        <h1>eBooks</h1>
     </section>
 
     <section id="arts">
         <header>
-
+            <h1>Arts</h1>
         </header>
-        <h1>Arts</h1>
     </section>
 
     <section id="courses">
         <header>
-
+            <h1>Courses</h1>
         </header>
-        <h1>Courses</h1>
     </section>
 
     <section id="music">
         <header>
-
+            <h1>Music</h1>
         </header>
-        <h1>Music</h1>
     </section>
 
     <section id="videos">
         <header>
-
+            <h1>Videos</h1>
         </header>
-        <h1>Videos</h1>
     </section>
 
     <section id="construction">
         <header>
-
+            <h1>settings</h1>
         </header>
-        <h1>This is the settings page</h1>
     </section> 
 
     <script src="script.js"></script>
