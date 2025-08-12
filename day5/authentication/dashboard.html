@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="./auth.css">
+</head>
+<body>
+    <section class="modal-container">
+        <div class="modal-ctn">
+            <p class="modal-content"></p>
+        </div>
+    </section>
+
+    <h1>Welcome to your Dashboard</h1>
+    <div>
+        <h2 id="username"></h2>
+        <p id="useremail"></p>
+        <p id="userphone"></p>
+    </div>
+    <div>
+
+        <div>
+            <p>Balance : <span id="balance"></span></p>
+        </div>
+        <form action="" id="balance-form">
+            <label for="amount">
+                <input type="number" id="amount">
+                <button id="deposit">Deposit</button>
+                <button id="withdraw">Withdraw</button>
+            </label>
+        </form>
+    </div>
+    <script src="./js/dashboard.js"></script>
+</body>
+</html>
